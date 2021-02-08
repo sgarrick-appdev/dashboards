@@ -4,6 +4,6 @@ Rails.application.routes.draw do
 get("/forex", {:controller => "currencies", :action=> "first_currency"})
 get("/forex/:main_symbol", {:controller => "currencies", :action=> "second_currency"})
 get("/forex/:main_symbol/:second_symbol", {:controller => "currencies", :action=> "conversion"})
-get("https://api.exchangerate.host/convert?from=:main_symbol&to=:sec_symbol", {:controller => "currencies", :action=> "conversion"})
+
 end
 
